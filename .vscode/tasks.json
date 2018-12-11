@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/OyuncuSepeti.API/OyuncuSpeti.API.csproj"
+                "${workspaceFolder}/OyuncuSepeti.API/OyuncuSepeti.API.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

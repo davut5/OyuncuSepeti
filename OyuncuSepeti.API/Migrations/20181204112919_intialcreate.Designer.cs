@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OyuncuSepeti.API.Data;
 
-namespace OyuncuSpeti.API.Migrations
+namespace OyuncuSepeti.API.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20181204112919_intialcreate")]

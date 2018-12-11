@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "OyuncuSpeti.API": {
+    "OyuncuSepeti.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
