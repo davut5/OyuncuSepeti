@@ -41,6 +41,10 @@ namespace OyuncuSepeti.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
+
+            try
+            {
+                
             var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
             if (userFromRepo == null)
 
@@ -63,6 +67,13 @@ namespace OyuncuSepeti.API.Controllers
             return Ok(new {
                 token = tokenHandler.WriteToken(token)
             });
+            }
+            catch (System.Exception)
+            {
+                
+                return StatusCode(500,"Sunucu Yanıt Vermedi");
+            }
+
         }
 
     }
