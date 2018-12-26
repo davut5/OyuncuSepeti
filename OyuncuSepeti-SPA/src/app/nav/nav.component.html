@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <div class="container">
       <a class="navbar-brand" [routerLink]="['/home']" >Oyuncu Sepeti</a>
       <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
@@ -10,9 +10,7 @@
         </li>
         <li class="nav-item" routerLinkActive="active" >
           <a class="nav-link" [routerLink]="['/messages']">Mesajlar</a>
-        </li>
-           
-        
+        </li>        
       </ul>
   
       <div *ngIf="loggedIn()" class="dropdown" dropdown>
