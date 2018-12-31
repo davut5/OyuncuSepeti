@@ -1,8 +1,8 @@
 using System;
 
-namespace OyuncuSepeti.API.Models
+namespace OyuncuSepeti.API.Dtos
 {
-    public class Photo
+    public class PhotoForReturnDto
     {
         public int Id { get; set; }
         public string Url { get; set; }
@@ -12,8 +12,5 @@ namespace OyuncuSepeti.API.Models
 
         public bool IsMain { get; set; }
         public string PublicId { get; set; }
-public User User { get; set; }
-public int UserId { get; set; }
-
     }
 }

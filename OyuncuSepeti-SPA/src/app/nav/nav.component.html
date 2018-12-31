@@ -14,11 +14,14 @@
       </ul>
   
       <div *ngIf="loggedIn()" class="dropdown" dropdown>
+        <span class="mr-1">
+          <img src="{{photoUrl}}" alt="">
+        </span>
         <a class="dropdown-toggle text-light" dropdownToggle>
           Hoşgeldiniz {{authService.decodedToken?.unique_name | titlecase}}
         </a>
         <div class="dropdown-menu mt-3" *dropdownMenu >
-          <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Profil Düzenle</a>
+          <a class="dropdown-item" [routerLink]="['/member/edit']"  ><i class="fa fa-user"></i>Profil Düzenle</a>
           <div class="div dropdown-divider"></div>
           <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i>Çıkış</a>
         </div>
